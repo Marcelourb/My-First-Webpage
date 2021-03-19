@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src=”script.js></script>
+  <title>What is CSS?</title>
+</head>
+
+<body class="nunito">
+  
+  <!--navbar-->
+
+<style>
+  li a.active {
+    color: white;
+    background-color: rgb(45, 163, 218);
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+</style>
+
+    <ul class="uln">
+      <li class="li-a li-b"><a class="active" href="index.html">Home</a></li>
+      <li class="li-a li-b"><a href="html.html">HTML</a></li>
+      <li class="li-a li-b"><a href="css.html">CSS</a></li>
+      <li class="li-a li-b"><a href="javascript.html">JavaScript</a></li>
+    </ul>
+
+   <!--image header-->
+
+   <header>
+      <div class="image3"></div>
+   </header>
+
+   <!--content--> 
+   <!--reference: https://www.hostinger.com/tutorials/difference-between-inline-external-and-internal-css#:~:text=There%20are%20three%20ways%20you,%2C%20external%2C%20and%20inline%20styles.-->
+   
+   <hr>
+   <br><br>
+   <h1 class="text-center">What is CSS?</h1>
+   <br><br>
+   <p class="container"><strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing the presentation of a document written in a markup language such as HTML, it is considered a cornerstone technology of the World Wide Web, alongside <strong>HTML</strong> and <strong>JavaScript</strong>.
+     It describes how HTML elements are displayed on the screen, also it saves lots of work once you have control of multiple web pages just in one file (an external stylesheet), without having a problem of changing the code on the HTML structure. CSS is designed to enable the separation of presentation and content, such as layout, colors and fonts, it also reduces complexity and repetition in the structural content.
+    <br>
+    <div class="container">There are 3 different types of <strong>CSS</strong>: <br><br>
+    <em><ul>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+      <li>Inline CSS</li>
+    </ul></em>
+    <br>
+    </div>
+    <div class="container"><strong>Internal or embedded CSS</strong> is an effective method of styling a single page. However, using this style for multiple pages is time-consuming as you need to put CSS rules to every page of your website. It requires you to add <strong>&lt;style&gt;</strong> tag in the <strong>&lt;head&gt;</strong> section of your HTML document to do any modifications just in one page.
+      <br><br>
+      <strong>External CSS</strong> is a more efficient method, especially for styling a large website. By editing one <strong>.css</strong> file, you can change your entire site at once, you just need to link your web pages to an external <strong>.css</strong> file, which can be created by any text editor in your device. In case to link it, you need to add in the <strong>&lt;head&gt;</strong> section of your HTML sheet, a reference to your external <strong>.css</strong> file right after <strong>&lt;title&gt;</strong> tag:
+      <br><br>
+       <div class="text-center"><strong><em>&lt;link rel="stylesheet" href="style.css"&gt;</em></strong></div>
+       <br><br>
+       <strong>Inline CSS</strong> is not really recommended, as each HTML tag needs to be styled individually. Managing your website may become too hard if you only use inline CSS. For this CSS style, you’ll only need to add the style attribute to each HTML tag, without using selectors. However, inline CSS in HTML can be useful in some situations. For example, in cases where you don’t have access to CSS files or need to apply styles for a single element only.
+
+        
+    </div></p>
+  <br>
+  <h5 class="text-center">Here is an example using <strong>Internal CSS</strong> to change the background color:</h5><br>
+
+  <!--css example-->
+
+  <table class="container">
+    <th class="column-css table-dark"> 
+      <div> 
+    &lt;!DOCTYPE html&gt;
+    <br>&lt;html&gt;
+    <br>&lt;body&gt;
+    <br>&lt;style&gt;
+    <br> body { 
+    <br>background-color: aqua;
+    <br>}
+    <br>&lt;/style&gt;
+    <br>&lt;h1&gt;This is a Heading&lt;/h1&gt;
+    <br>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+    <br>
+    <br>&lt;/body&gt;
+    <br>&lt;/html&gt;
+  </div>
+    </th>
+  
+  <th class="column-css2 text-center">
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </th>
+  </table>
+  </div>
+  <br>
+  <hr>
+
+ <!--footer-->
+<div>
+<footer class="footer">
+<p>Developed by:  <strong>Marcelo Urbano</strong><br>2020314</p>
+</footer>
+</div>
+
+</body>
+</html>     

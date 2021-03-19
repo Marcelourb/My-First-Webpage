@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <title>What is JavaScript?</title>
+</head>
+<body class="nunito">
+
+
+    <!--navbar-->
+
+  <style>
+      li a.active {
+    color: white;
+    background-color: rgb(214, 179, 19);
+    padding: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+      }
+  </style>
+
+    <ul class="uln">
+      <li class="li-a li-b"><a class="active" href="index.html">Home</a></li>
+      <li class="li-a li-b"><a href="html.html">HTML</a></li>
+      <li class="li-a li-b"><a href="css.html">CSS</a></li>
+      <li class="li-a li-b"><a href="javascript.html">JavaScript</a></li>
+    </ul>
+
+<!--image header-->
+
+    <header>
+      <div class="image4"></div>
+   </header>
+
+<!--content-->
+<!--reference: https://www.hackreactor.com/blog/what-is-javascript-used-for-->
+  <hr>
+  <br><br>
+   <h1 class="text-center">What is JavaScript?</h1><br><br>
+   <p class="container"><strong>JavaScript</strong> is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where <strong>HTML</strong> and <strong>CSS</strong> are languages that give structure and style to web pages, <strong>JavaScript</strong> gives web pages interactive elements that engage a user. Common examples of JavaScript that you might use every day include the search box on Amazon, a news recap video embedded on The New York Times, or refreshing your Twitter feed. 
+    Incorporating JavaScript improves the user experience of the web page by converting it from a static page into an interactive one. To recap, JavaScript adds behavior to web pages.
+    <br><br><br>
+
+<h2 class="text-center">Examples of JavaScript</h2>
+
+   <br><br>
+   <p class="container"><strong>JavaScript</strong> allows users to interact with web pages. There are almost no limits to the things you can do with JavaScript on a web page – these are just a few examples:</p>
+   <br>
+   <div class="container">
+    <em><ul>
+     <li>Show or hide more information with the click of a button</li>
+     <li>Change the color of a button when the mouse hovers over it</li>
+     <li>Slide through a carousel of images on the homepage</li>
+     <li>Zooming in or zooming out on an image</li>
+     <li>Displaying a timer or count-down on a website</li>
+     <li>Playing audio and video in a web page</li>
+     <li>Displaying animations</li>
+    </ul></em>
+   </div>
+
+   <!--javascript first example-->
+
+  <br><br> 
+<div class="container">
+  <h3 class="text-center">The Light Bulb</h3><br><br>
+<p class="column-lb">This is a classic example of what <strong>JavaScript</strong> can do, the classic <Strong><em>Light Bulb</em></Strong> which can turn On/Off the light just clicking the buttons, but what is happening behind the code?
+  <br><br>When the user click in a button, <strong>JavaScript</strong> changes the Image of the bulb from off to on, so then creating this illusion of turning On/Off, simple like that!</p>
+</div>
+
+<div class="containerlb">
+  <img id="light-bulb" src="img/lightbulb-off.jpg" style="width:200px;">
+ <br><br>
+ <div>
+ <button onclick="lightOn()">ON</button>
+ <button onclick="lightOff()">OFF</button>
+ </div>
+</div>
+<br><br>
+<table class="container">
+  <th class="column-lbc">
+    <h2>Code on the JavaScript file (.js)</h2>
+    <br><br>
+    function lightOff() {
+    <br>
+      document.getElementById("light-bulb").src='img/lightbulb-off.jpg';
+    <br>
+      }
+    <br>
+      function lightOn() {
+    <br>
+      document.getElementById("light-bulb").src='img/lightbulb-on.jpg';
+    <br>
+      }
+    <br><br><br><br><br><br><br><br><br>
+  </th>
+  <th class="column-lbch table-dark">
+    <h2>Code on the HTML file (.html)</h2>
+    <br>&lt;!DOCTYPE html&gt;
+    <br>&lt;head&gt;
+    <br>&lt;script src="js/script.js"&gt;&lt;/script&gt;
+    <br>&lt;/head&gt;
+    <br>
+    <br>&lt;html&gt;
+    <br>&lt;body&gt;
+    <br>
+    <br>&lt;img id="light-bulb" src="img/lightbulb-off.jpg" style="width:200px;"&gt;
+    <br>&lt;button onclick="lightOn()"&gt;ON&lt;/button&gt;
+    <br>&lt;button onclick="lightOff()"&gt;OFF&lt;/button&gt;
+    <br>
+    <br>&lt;/body&gt;
+    <br>&lt;/html&gt;
+  </th>
+</table>
+
+<br><br><br><br>
+
+ <!--javascript second example-->  
+ <!--The window alert example is from w3schools, Although I haven't use the same code to do the alert, just in the example-->
+ <div class="container">
+<h3 class="text-center">Window Alert</h3>
+<br>
+<p>Did you know that every window alert that appears on your browser is developed using <strong>JavaScript</strong> language? 
+<br>In the table below you can find the code to create a window alert and  also you can click on the button to see what it will display.</p><br>
+</div>
+
+<div>
+  <table class="container">
+  <th class="column-js table-dark"> 
+  &lt;!DOCTYPE html&gt;
+  <br>&lt;html&gt;
+  <br>&lt;body&gt;<br>
+  <br>&lt;h2&gt;JavaScript Alert&lt;/h2&gt;<br>
+  <br>&lt;button onclick="myFunction( )"&gt;Try it&lt;/button&gt;<br>
+  <br>&lt;script&gt;
+  <br>function myFunction( ) {<br>
+    alert("I am an alert box!");<br>
+  }
+  <br>&lt;/script&gt;<br>
+  <br>&lt;/body&gt;
+  <br>&lt;/html&gt;
+  </th>
+  
+  <th class="column-js2 text-center">
+    <h2>JavaScript Alert</h2><br>
+    <button onclick="windowalert()">Click Here</button>
+  </th>
+  </table>
+  
+</div>
+ <!---->
+
+
+<br><br><br><br><br><br>
+
+ <!--footer-->
+<div>
+<footer class="footer">
+<p>Developed by:  <strong>Marcelo Urbano</strong><br>2020314</p>
+</footer>
+</div>
+
+</body>
+</html>     
